@@ -18,22 +18,28 @@ head(raw_data)
 nrow(raw_data)
 
 ```
+
 ```{r}
 penguins <- raw_data |> dplyr::filter(rowSums(!is.na(raw_data)) >= 4) # keeps row with at least 4 non-NAs because species island and year seem to be always given
 nrow(penguins)
 
 ```
 
-
 2.  What species of penguins are included, and how many penguins are there of each species?
 
 ```{r}
+unique(raw_data["species"])
+```
 
+```{r}
+raw_data |> dplyr::count(species)
 ```
 
 3.  What are the unique values for the island and sex columns?
 
 ```{r}
+unique(raw_data["island"])
+unique(raw_data["sex"])
 
 ```
 
