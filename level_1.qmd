@@ -3,3 +3,42 @@ title: "level_1"
 format: html
 ---
 
+import
+
+```{r import}
+pacman::p_load(palmerpenguins, tidyverse, dplyr)
+
+raw_data <- penguins
+head(raw_data)
+```
+
+1.  How many penguins are there in the dataset?
+
+```{r}
+nrow(raw_data)
+
+```
+```{r}
+penguins <- raw_data |> dplyr::filter(rowSums(!is.na(raw_data)) >= 4) # keeps row with at least 4 non-NAs because species island and year seem to be always given
+nrow(penguins)
+
+```
+
+
+2.  What species of penguins are included, and how many penguins are there of each species?
+
+```{r}
+
+```
+
+3.  What are the unique values for the island and sex columns?
+
+```{r}
+
+```
+
+4.  Are there any missing values in the dataset, and in which columns?
+
+```{r}
+
+```
