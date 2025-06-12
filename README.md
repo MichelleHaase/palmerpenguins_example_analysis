@@ -5,7 +5,7 @@ https://github.com/mcnakhaee/palmerpenguins for the python dataset import.
 https://allisonhorst.github.io/palmerpenguins for the R Package   
 
 ## Questions
-the questions where posed by ChatGPT in 6 difficulty levels and answered by me in each a Quarto (R) and a Jupiternotebook (Python) each named after each level.
+the questions were posed by ChatGPT in 6 difficulty levels and will be answered by me in each a Quarto (R) and a Jupiternotebook (Python) each named after each level.
 
 ### Level 1
 
