@@ -5,6 +5,8 @@ format: html
 
 import
 
+raw_data \<- penguins
+
 ```{r import}
 pacman::p_load(palmerpenguins, tidyverse, dplyr)
 
@@ -46,5 +48,7 @@ unique(raw_data["sex"])
 4.  Are there any missing values in the dataset, and in which columns?
 
 ```{r}
+raw_data2 <- penguins_raw[, c("Species", "Island", "Culmen Length (mm)", "Culmen Depth (mm)", "Flipper Length (mm)", "Body Mass (g)", "Sex")]
 
+raw_data2[apply(is.na(raw_data2), 1, any), ]
 ```
